@@ -76,6 +76,7 @@ h1.hero-title em{color:var(--yellow);font-style:italic}
 .proj-media-wrap{position:relative;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;}
 .proj-media-iframe{width:100%;height:100%;border:0;pointer-events:none;}
 .proj-media-img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s ease,filter .3s;filter:grayscale(20%);}
+.proj-media-img.poster-thumb{object-fit:contain;background:#214a9b;padding:.45rem;}
 .proj-card:hover .proj-media-img{transform:scale(1.04);filter:grayscale(0%)}
 .proj-hover-bar{position:absolute;bottom:0;left:0;right:0;height:3px;transform:scaleX(0);transform-origin:left;transition:transform .3s ease;background:var(--yellow);}
 .proj-card:hover .proj-hover-bar{transform:scaleX(1)}
@@ -291,6 +292,7 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;align-item
       <button class="fb" data-f="motion">Motion</button>
       <button class="fb" data-f="reel">Reels</button>
       <button class="fb" data-f="ilustracion">Ilustración</button>
+      <button class="fb" data-f="diseno">Diseño gráfico</button>
     </div>
   </div>
   <div class="proj-grid" id="pgrid">
@@ -499,6 +501,21 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;align-item
       <span class="proj-num">20</span>
       <div class="proj-media-wrap"><iframe class="proj-media-iframe" src="https://drive.google.com/file/d/18DeizMfvktSLiq0Gi7UJwOkghdwuppUU/preview" loading="lazy"></iframe><div class="proj-hover-bar"></div></div>
       <div class="proj-info"><div class="proj-app-tag">Reel</div><h3 class="proj-title">Reel<br>Azúcar</h3><p class="proj-desc">Reel editado en Premiere Pro.</p><div class="proj-meta"><span class="proj-year">2026</span><span class="proj-cta">Ver →</span></div></div>
+    </div>
+
+
+    <div class="proj-card" data-cat="diseno" data-type="image" data-src="assets/poster-la-grecia-vorterix.jpeg" data-thumb="assets/poster-la-grecia-vorterix.jpeg" data-title="La Grecia — Teatro Vorterix" data-tag="Diseño gráfico">
+      <span class="proj-num">21</span>
+      <div class="proj-media-wrap">
+        <img class="proj-media-img poster-thumb" src="assets/poster-la-grecia-vorterix.jpeg" alt="Póster de La Grecia en Teatro Vorterix" loading="lazy" />
+        <div class="proj-hover-bar"></div>
+      </div>
+      <div class="proj-info">
+        <div class="proj-app-tag">Diseño gráfico</div>
+        <h3 class="proj-title">La Grecia<br>Teatro Vorterix</h3>
+        <p class="proj-desc">Póster promocional para el show de La Grecia en Teatro Vorterix.</p>
+        <div class="proj-meta"><span class="proj-year">2026</span><span class="proj-cta">Ver →</span></div>
+      </div>
     </div>
 
   </div>
